@@ -1,0 +1,88 @@
+.ifpr-header {
+  background: #006747;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+.ifpr-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.ifpr-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-1 {
+  border-top: 5px solid #8DC63F;
+}
+
+.card-2 {
+  border-top: 5px solid #006747;
+}
+
+.ifpr-btn,
+.ifbr-btn-outline {
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.ifpr-btn {
+  background: #006747;
+  color: white;
+  border: none;
+}
+
+.ifpr-btn:hover {
+  background: #005238;
+  transform: translateY(-2px);
+}
+
+.ifbr-btn-outline {
+  background: white;
+  color: #006747;
+  border: 2px solid #006747;
+}
+
+.ifbr-btn-outline:hover {
+  background: #006747;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ifpr-footer {
+  padding: 20px 0;
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.divsugestao {
+  background-color: #8DC63F;
+  margin: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+.img1 {
+  height: 15vh;
+  width: 12vh;
+}
+
+.form-label {
+  font-size: 15px;
+  font-weight: bold;
+}
