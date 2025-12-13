@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="livros.css">
+  
+</head>
+<body>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    
+  <header class="ifpr-header">
+      <div class="container">
+          <h1>Biblioteca IFPR</h1>
+          <p>Sistema de Livros</p>
+      </div>
+    <div class="container barra">
+      <div class="row">
+    <input id="barraPesquisa"  onkeyup="procurar()" placeholder="Pesquisar">
+    </div>
+    </div>
+  </header>
+
+    
+   
+
+
+    <div class="container">
+        <div class="row">
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="https://m.media-amazon.com/images/I/816Udvs9O7L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top" >
+              <div class="card-body">
+                <h5 class="card-title">Tudo é rio</h5>
+                <p class="card-text text-muted">Carla Madeira</p>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Resumo e avaliações
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Tudo é Rio conta a história de Dalva, Venâncio e Lucy, cujas vidas se entrelaçam após a morte do filho de Dalva e Venâncio, tragédia que abala profundamente o casamento. Quando Venâncio se envolve com Lucy, uma prostituta misteriosa e intensa, o triângulo emocional expõe dores, culpas e desejos que transformam os três personagens. Com linguagem poética, o romance mostra como amor, perda e paixão podem transbordar como um rio que nunca para de correr.
+
+                        <div class="card questionario">
+                          <h6 class="text-center my-2">Sua avaliação</h6>
+
+                          <div class="rating-options">
+                            <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                          </div>
+
+                          <div class="feedback">
+                            <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                            <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                            <div class="d-grid gap-1 mt-2">
+                              <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                            </div>
+                          </div>
+
+                          <p class="rating-text small mt-2"></p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        
+
+          <div class="card col-12 col-md-6 col-lg-4">
+            <img src="https://m.media-amazon.com/images/I/71Gmavgu3ZL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Crime e castigo</h5>
+              <p class="card-text text-muted">Fiódor Dostoiévski</p>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Resumo e avaliações
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Crime e Castigo acompanha Raskólnikov, um jovem estudante pobre de São Petersburgo que, acreditando ser intelectualmente superior e destinado a algo grandioso, assassina uma agiota para provar sua teoria de que certos homens podem ultrapassar a moral comum. Após o crime, ele afunda em culpa, febre, paranoia e conflitos internos, enquanto pessoas ao seu redor — especialmente Sônia, uma jovem humilde e compassiva — revelam caminhos de redenção. O romance explora, com profundidade psicológica, temas como moralidade, ego, sofrimento e a busca pela verdade dentro de si mesmo.
+
+                      <div class="card questionario"> 
+                          <h6 class="text-center my-2">Sua avaliação</h6>
+
+                          <div class="rating-options">
+                            <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div> 
+                            <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                          </div>
+
+                          <div class="feedback"> 
+                            <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                            <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                            <div class="d-grid gap-1 mt-2">
+                              <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button> 
+                            </div>
+                          </div>
+
+                          <p class="rating-text small mt-2"></p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                
+
+          <div class="card col-12 col-md-6 col-lg-4">
+            <img src="https://m.media-amazon.com/images/I/51sz0nn7u9L._SY445_SX342_ControlCacheEqualizer_.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">O morro dos ventos uivantes</h5>
+              <p class="card-text text-muted">Emily Brontë</p>
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        Resumo e avaliações
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        O Morro dos Ventos Uivantes conta a história intensa e trágica entre Heathcliff e Catherine, dois personagens marcados por paixão, orgulho e vingança. Criado como órfão na família Earnshaw, Heathcliff cresce sofrendo humilhações, e o amor profundo — mas impossível — entre ele e Catherine acaba destruído quando ela decide se casar com outro homem por status. Consumido pela dor, Heathcliff passa a agir movido por ódio e obsessão, afetando duas gerações de famílias. O romance mistura atmosfera sombria, emoções extremas e personagens complexos, mostrando como o amor pode se transformar em destruição.
+                        <div class="card questionario"> 
+                          <h6 class="text-center my-2">Sua avaliação</h6>
+
+                          <div class="rating-options">
+                            <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                          </div>
+
+                          <div class="feedback">
+                            <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                            <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                            <div class="d-grid gap-1 mt-2">
+                              <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                            </div>
+                          </div>
+
+                          <p class="rating-text small mt-2"></p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="https://m.media-amazon.com/images/I/81S3NIKIc6L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Em agosto nos vemos</h5>
+                <p class="card-text text-muted">Gabriel García Marques</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                          Resumo e avaliações
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Em agosto nos vemos acompanha Ana Magdalena Bach, uma mulher casada que, todo ano, viaja sozinha a uma ilha do Caribe para visitar o túmulo da mãe. Nessas viagens repetidas, ela começa a questionar sua vida, seu casamento e sua própria identidade, permitindo-se viver desejos e encontros que antes reprimia. A cada agosto, Ana se reconstrói um pouco mais, numa narrativa delicada sobre memória, liberdade e o florescer tardio de quem decide finalmente olhar para si mesma.
+
+                          <div class="card questionario">
+                            <h6 class="text-center my-2">Sua avaliação</h6>
+
+                            <div class="rating-options">
+                              <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                            </div>
+
+                            <div class="feedback">
+                              <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                              <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                              <div class="d-grid gap-1 mt-2">
+                                <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                              </div>
+                            </div>
+
+                            <p class="rating-text small mt-2"></p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            
+
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="https://m.media-amazon.com/images/I/71AeB1+8dZL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Jantar secreto</h5>
+                <p class="card-text text-muted">Raphael Montes</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                          Resumo e avaliações
+                        </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Jantar Secreto segue um grupo de quatro jovens que se muda do Paraná para o Rio de Janeiro e, sem dinheiro para sobreviver, cria um clube clandestino que organiza jantares exclusivos — até que eles passam a servir carne humana para clientes ricos. A situação, que começa como um desespero financeiro, vira um ciclo de violência, mentiras e degradação moral, levando os protagonistas a consequências cada vez mais sombrias. O romance mistura suspense, horror e crítica social, mostrando até onde alguém pode ir quando está encurralado.
+
+                          <div class="card questionario">
+                            <h6 class="text-center my-2">Sua avaliação</h6>
+
+                            <div class="rating-options">
+                              <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                            </div>
+
+                            <div class="feedback">
+                              <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                              <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                              <div class="d-grid gap-1 mt-2">
+                                <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                              </div>
+                            </div>
+
+                            <p class="rating-text small mt-2"></p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="https://m.media-amazon.com/images/I/715JOcuqSSL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">A metamorfose</h5>
+                <p class="card-text text-muted">Franz Kafka</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                          Resumo e avaliações
+                        </button>
+                      </h2>
+                      <div id="collapseSix" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          A Metamorfose conta a história de Gregor Samsa, um caixeiro-viajante que acorda um dia transformado em um inseto gigante. Incapaz de trabalhar e comunicar-se como antes, ele passa a ser visto como um fardo pela família, que inicialmente se assusta e tenta ajudá-lo, mas aos poucos o rejeita. A obra acompanha sua solidão, a mudança no comportamento dos familiares e sua lenta deterioração, funcionando como uma metáfora poderosa sobre desprezo, desumanização e a sensação de não pertencer.
+
+                          <div class="card questionario">
+                            <h6 class="text-center my-2">Sua avaliação</h6>
+
+                            <div class="rating-options">
+                              <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                            </div>
+
+                            <div class="feedback">
+                              <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                              <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                              <div class="d-grid gap-1 mt-2">
+                                <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                              </div>
+                            </div>
+
+                            <p class="rating-text small mt-2"></p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          
+
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="https://m.media-amazon.com/images/I/81BdpMhm3iL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">A empregada</h5>
+                <p class="card-text text-muted"> Freida McFadden</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                          Resumo e avaliações
+                        </button>
+                      </h2>
+                      <div id="collapseSeven" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          A Empregada acompanha Millie, uma jovem que consegue trabalho na mansão impecável da família Winchester. Logo, ela percebe que o ambiente é sufocante: Nina, a dona da casa, age de maneira errática e cruel, e segredos estranhos pairam sobre todos. Enquanto Millie tenta se manter firme no emprego, o clima de manipulação cresce — e fica claro que ela também esconde um passado perigoso. A história segue entre tensão, reviravoltas e revelações que mudam completamente a percepção do que realmente está acontecendo naquela casa.
+
+                          <div class="card questionario">
+                            <h6 class="text-center my-2">Sua avaliação</h6>
+
+                            <div class="rating-options">
+                              <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                            </div>
+
+                            <div class="feedback">
+                              <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                              <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                              <div class="d-grid gap-1 mt-2">
+                                <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                              </div>
+                            </div>
+
+                            <p class="rating-text small mt-2"></p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          
+
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="https://m.media-amazon.com/images/I/71jrp43TCcL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Pessoas normais</h5>
+                <p class="card-text text-muted">Sally Rooney</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                          Resumo e avaliações
+                        </button>
+                      </h2>
+                      <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Pessoas Normais acompanha Marianne e Connell, dois jovens irlandeses que vivem uma relação intensa, cheia de aproximações e afastamentos ao longo dos anos. Embora venham de mundos sociais diferentes — ela rica e isolada, ele popular e de origem humilde —, eles formam um vínculo profundo que molda quem cada um se torna. A história acompanha suas inseguranças, traumas, afetos e dificuldades de comunicação, mostrando como o amor pode ser forte e frágil ao mesmo tempo, e como crescer nem sempre significa saber amar.
+
+                          <div class="card questionario">
+                            <h6 class="text-center my-2">Sua avaliação</h6>
+
+                            <div class="rating-options">
+                              <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                            </div>
+
+                            <div class="feedback">
+                              <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                              <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                              <div class="d-grid gap-1 mt-2">
+                                <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                              </div>
+                            </div>
+
+                            <p class="rating-text small mt-2"></p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+           
+
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="https://m.media-amazon.com/images/I/91M9xPIf10L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">O Hobbit</h5>
+                <p class="card-text text-muted">J.R.R. Tolkien </p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                          Resumo e avaliações
+                        </button>
+                      </h2>
+                      <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          O Hobbit conta a aventura de Bilbo Bolseiro, um hobbit pacato que vê sua vida mudar quando é convidado pelo mago Gandalf a acompanhar um grupo de anões em uma jornada para recuperar o tesouro guardado pelo dragão Smaug. Ao longo do caminho, Bilbo enfrenta desafios, criaturas perigosas e descobre coragem e astúcia que nem imaginava ter. A história mostra sua transformação de alguém acomodado a um herói improvável, vivendo uma jornada cheia de magia, perigos e descobertas.
+
+                          <div class="card questionario">
+                            <h6 class="text-center my-2">Sua avaliação</h6>
+
+                            <div class="rating-options">
+                              <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                            </div>
+
+                            <div class="feedback">
+                              <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                              <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                              <div class="d-grid gap-1 mt-2">
+                                <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                              </div>
+                            </div>
+
+                            <p class="rating-text small mt-2"></p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          
+
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="https://m.media-amazon.com/images/I/71GyHj5glWL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Torto arado</h5>
+                <p class="card-text text-muted">Itamar Vieira Junior</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                          Resumo e avaliações
+                        </button>
+                      </h2>
+                      <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Torto Arado acompanha as irmãs Bibiana e Belonísia, que vivem em uma comunidade rural descendente de trabalhadores escravizados no interior da Bahia. Após um acidente na infância que muda para sempre a vida das duas, elas crescem presas a silencios, segredos e à dura realidade de um povo explorado por fazendeiros. A narrativa mostra a luta coletiva por terra, dignidade e voz, revelando tradições, espiritualidade e resistência de uma comunidade marcada pela injustiça. É uma história sobre identidade, ancestralidade e a força das mulheres.
+
+                          <div class="card questionario">
+                            <h6 class="text-center my-2">Sua avaliação</h6>
+
+                            <div class="rating-options">
+                              <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                            </div>
+
+                            <div class="feedback">
+                              <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                              <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                              <div class="d-grid gap-1 mt-2">
+                                <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                              </div>
+                            </div>
+
+                            <p class="rating-text small mt-2"></p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          
+
+
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="https://m.media-amazon.com/images/I/61L+4OBhm-L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">A menina que roubava livros</h5>
+                <p class="card-text text-muted">Markus Zusak</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                          Resumo e avaliações
+                        </button>
+                      </h2>
+                      <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          A Menina que Roubava Livros acompanha Liesel Meminger, uma garota alemã que cresce durante a Segunda Guerra Mundial e encontra nos livros uma forma de enfrentar o medo, a perda e a brutalidade do nazismo. Levando consigo o hábito de “roubar” livros em momentos importantes da vida, ela descobre amizade, coragem e esperança enquanto vive com uma família adotiva que esconde um judeu no porão. Narrada pela própria Morte, a história revela a força das palavras em meio ao horror da guerra.
+
+                          <div class="card questionario">
+                            <h6 class="text-center my-2">Sua avaliação</h6>
+
+                            <div class="rating-options">
+                              <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                            </div>
+
+                            <div class="feedback">
+                              <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                              <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                              <div class="d-grid gap-1 mt-2">
+                                <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                              </div>
+                            </div>
+
+                            <p class="rating-text small mt-2"></p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          
+
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="https://m.media-amazon.com/images/I/91mdEwOzdGS._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Uma vida pequena</h5>
+                <p class="card-text text-muted"> Hanya Yanagihara</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+                          Resumo e avaliações
+                        </button>
+                      </h2>
+                      <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Uma Vida Pequena acompanha quatro amigos que se mudam para Nova York em busca de futuro, mas a história acaba se centrando em Jude, um homem brilhante e reservado que carrega traumas profundos do passado. À medida que envelhecem, as relações entre eles revelam afeto, lealdade e também o peso do sofrimento extremo que Jude tenta esconder. O romance mostra, com intensidade emocional, os limites do amor, da amizade e da dor, explorando como alguns passados parecem impossíveis de superar, mesmo cercados de carinho.
+
+                          <div class="card questionario">
+                            <h6 class="text-center my-2">Sua avaliação</h6>
+
+                            <div class="rating-options">
+                              <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                              <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                            </div>
+
+                            <div class="feedback">
+                              <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                              <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                              <div class="d-grid gap-1 mt-2">
+                                <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                              </div>
+                            </div>
+
+                            <p class="rating-text small mt-2"></p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+          <div class="card col-12 col-md-6 col-lg-4">
+            <img src="https://m.media-amazon.com/images/I/71Xta4Nf7uL._SY522_.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Orgulho e preconceito</h5>
+              <p class="card-text text-muted">Jane Austen</p>
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+                        Resumo e avaliações
+                      </button>
+                    </h2>
+                    <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Orgulho e Preconceito é um dos mais aclamados romances da escritora inglesa Jane Austen. Publicado em 1813, revela como era a sociedade da época, quando os relacionamentos se desenrolavam de maneira mais lenta e romântica, no ritmo das cartas levadas por mensageiros a cavalo. Nesse mundo, o sonho da Sra. Bennet era casar bem suas cinco filhas: Jane, Elizabeth, Mary, Kitty e Lydia. Entre as irmãs, destaca-se Elizabeth, a Lizzy, que se depara com um turbilhão de sentimentos diante do orgulho e preconceito que mascaram a realidade.
+                        <div class="card questionario">
+                          <h6 class="text-center my-2">Sua avaliação</h6>
+
+                          <div class="rating-options">
+                            <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                          </div>
+
+                          <div class="feedback">
+                            <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                            <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                            <div class="d-grid gap-1 mt-2">
+                              <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                            </div>
+                          </div>
+
+                          <p class="rating-text small mt-2"></p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+          <div class="card col-12 col-md-6 col-lg-4">
+            <img src="https://m.media-amazon.com/images/I/81LRk6+p1HL._SY522_.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">A garota do Lago</h5>
+              <p class="card-text text-muted">Charlie Donlea</p>
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="true" aria-controls="collapseFourteen">
+                        Resumo e avaliações
+                      </button>
+                    </h2>
+                    <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Summit Lake, uma pequena cidade entre montanhas, é esse tipo de lugar, bucólico e com encantadoras casas dispostas à beira de um longo trecho de água intocada.Duas semanas atrás, a estudante de direito Becca Eckersley foi brutalmente assassinada em uma dessas casas. Filha de um poderoso advogado, Becca estava no auge de sua vida. Atraída instintivamente pela notícia, a repórter Kelsey Castle vai até a cidade para investigar o caso. ...E LOGO SE ESTABELECE UMA CONEXÃO ÍNTIMA QUANDO UM VIVO CAMINHA NAS MESMAS PEGADAS DOS MORTOS...E enquanto descobre sobre as amizades de Becca, sua vida amorosa e os segredos que ela guardava, a repórter fica cada vez mais convencida de que a verdade sobre o que aconteceu com Becca pode ser a chave para superar as marcas sombrias de seu próprio passado.
+                        <div class="card questionario">
+                          <h6 class="text-center my-2">Sua avaliação</h6>
+
+                          <div class="rating-options">
+                            <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                          </div>
+
+                          <div class="feedback">
+                            <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                            <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                            <div class="d-grid gap-1 mt-2">
+                              <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                            </div>
+                          </div>
+
+                          <p class="rating-text small mt-2"></p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+          <div class="card col-12 col-md-6 col-lg-4">
+            <img src="https://m.media-amazon.com/images/I/81NrJ67G81L._SY522_.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Gente Pobre</h5>
+              <p class="card-text text-muted">Fiódor Dostoiévski</p>
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="true" aria-controls="collapseFifteen">
+                        Resumo e avaliações
+                      </button>
+                    </h2>
+                    <div id="collapseFifteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Primeira obra de Dostoiévski, Gente pobre mostra ao leitora dura realidade vivida pelos moradores de São Petesburgo, no século XIX por meio das cartas trocadas entre os protagonistas. Apesar de ter sido escrita quando o autor tinha apenas 24 anos foi sua primeira publicação, a obra já reflete a genialidade daquele que se tornou um dos grandes nomes da literatura russa. O relacionamento construído à distância, as dificuldades enfrentadas no dia a dia de uma vida paupérrima e os sentimentos mais profundos do ser humano estão claros e representados pelos personagens deste romance realista e envolvente.
+                        <div class="card questionario">
+                          <h6 class="text-center my-2">Sua avaliação</h6>
+
+                          <div class="rating-options">
+                            <div class="rating-btn cor" onclick="selectRating(this, 1)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 2)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 3)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 4)">⭐</div>
+                            <div class="rating-btn cor" onclick="selectRating(this, 5)">⭐</div>
+                          </div>
+
+                          <div class="feedback">
+                            <p class="text-center small mb-2">Obrigado! Conte-nos mais:</p>
+                            <textarea class="form-control form-control-sm feedbackText" rows="2" placeholder="Comentários..."></textarea>
+                            <div class="d-grid gap-1 mt-2">
+                              <button class="btn cor btn-sm" type="button" onclick="submitFeedback(this)">Enviar</button>
+                            </div>
+                          </div>
+
+                          <p class="rating-text small mt-2"></p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+
+
+            
+        </div>
+    </div>
+   
+
+
+
+
+  <footer class="ifpr-footer">
+      <div class="container text-center">
+          <p>Instituto Federal do Paraná</p>
+          <p>Biblioteca Digital 2025</p>
+      </div>
+  </footer>
+
+<script src="livros.js"></script>
+  
+</body>
+</html>
