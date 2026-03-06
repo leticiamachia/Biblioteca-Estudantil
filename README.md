@@ -1,1 +1,0 @@
-Durantes as aulas de WebII realizamos uma espécie de Hackaton em grupos, deveriamos resolver um problema do IFPR, realizando etapas de planejamento e análise. Este site é um protótipo que você pode entrar como visitante e acessar uma Biblioteca Estudantil com todas as funcionalidades.
